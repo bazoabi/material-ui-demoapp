@@ -4,6 +4,8 @@ import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
 import Material from "./Material";
+import AccordionExpandIcon from "./Accordion";
+import Container from "@mui/material/Container";
 
 const theme = createTheme({
   palette: {
@@ -20,7 +22,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Material />
+        <Container maxWidth="md">
+          <AccordionExpandIcon />
+        </Container>
       </div>
     </ThemeProvider>
   );
